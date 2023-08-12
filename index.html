@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Js Dom Event</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <h1 onclick="console.log('dom event click');">Dom Special Event</h1>
     <h2 title="this is title">Dom Special Title</h2>
     <button onclick="console.log(5);">Click Me</button>
     <button onclick="console.log(65);">Another button</button>
-    
+    <br />
+
+    <button onclick="document.body.style.background = 'yellow' ">
+      Make Yellow
+    </button>
+    <br />
+    <button onclick="makeRed()">Make Red</button> <br />
+    <button onclick="makePink()">Make Pink</button>
+    <button onclick="makeGray()">Make Gray</button>
+    <button onclick="makeWhite()">Make White</button> <br />
+    <button onclick="makeBlack()">Make Black</button>
+
+    <button id="make-blue">Make Blue</button>
+
+    <button id="make-purple">Make Purple</button>
+
+    <button id="make-green">Make Green</button>
+
+    <!-- option 04 -->
+    <button id="make-orange">Make Orage</button>
+    <button id="make-solid">Make Solid</button>
+
     <script src="js/event.js"></script>
-</body>
+    <script>
+      // option 02
+      function makeWhite() {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+      }
+
+      function makeBlack() {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+      }
+
+    </script>
+  </body>
 </html>
