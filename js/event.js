@@ -44,4 +44,7 @@ makeSolidButton.addEventListener("click", function makesolid() {
 });
 
 
-// option 4 final
+ // option 04- final
+ document.getElementById('make-golden').addEventListener('click', function(){
+  document.body.style.backgroundColor = 'goldenrod';
+ })
